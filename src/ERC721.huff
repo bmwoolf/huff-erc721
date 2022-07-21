@@ -1,0 +1,21 @@
+/*
+    need:
+    - hashmap util for mappings
+    - address util
+    - strings util for dynamic arrays
+    - ownable util
+*/
+
+
+
+// Interface
+#define function balanceOf(address) nonpayable returns(uint256)
+#define function ownerOf(uint256) nonpayable returns(address)
+#define function name() nonpayable returns(string)
+#define function symbol() nonpayable returns(string)
+#define function tokenURI(uint256) nonpayable returns(string)
+#define function approve(address, uint256) nonpayable returns()
+
+
+// Contract
+

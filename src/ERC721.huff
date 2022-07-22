@@ -24,4 +24,17 @@
 #define function safeTransferFrom(address, address, uint256) nonpayable returns()
 #define function safeTransferFrom(address, address, uint256, bytes memory) nonpayable returns()
 
+#define function mint(address, uint256) nonpayable returns()
+
+// Events
+#define event Transfer(address, address, uint256)
+#define event Approval(address, address, uint256)
+#define event ApprovalForAll(address, address, bool)
+
 // Contract
+
+
+// Constructor
+#define macro CONSTRUCTOR() = takes(0) returns(0) {
+    OWNABLE_CONSTRUCTOR();
+}
